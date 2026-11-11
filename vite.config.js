@@ -9,7 +9,7 @@ export default defineConfig({
     tailwindcss(),
   ],
 
-  base: '/todo-app/',
+  base: '/To-Do-List/',
 
   server: {
     watch: {
