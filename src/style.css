@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.task-checkbox {
+  appearance: none;
+  border: 1px solid #9810fa;
+  border-radius: 0.25rem;
+  background-color: #9810fa;
+  display: inline-grid;
+  place-content: center;
+  vertical-align: middle;
+}
+
+.task-checkbox:checked {
+  background-color: #9810fa;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+ }
+
+.dark .task-checkbox {
+  background-color: white;
+  border-color: #a855f7;
+}
+
+.dark .task-checkbox:checked {
+  background-color: white;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='%237e22ce' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+}
