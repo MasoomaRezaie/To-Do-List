@@ -5,10 +5,10 @@ function Header() {
     const { isDarkMode, setIsDarkMode } = useDarkmode();
 
     return (
-        <div id="header" className="max-w-full h-25 rounded-3xl p-5 bg-white/40 
+        <div id="header" className="max-w-full h-full md:h-25 rounded-xl md:rounded-3xl p-2 md:p-5 bg-white/40 
         dark:bg-purple-900/10 dark:border dark:border-purple-900/45 flex items-center justify-between">
             <div>
-                <h1 className="text-3xl font-extrabold font-serif text-indigo-600 dark:text-purple-600">Daily To Do List</h1>
+                <h1 className="text-xl md:text-3xl font-extrabold font-serif text-indigo-600 dark:text-purple-600">Daily To Do List</h1>
                 <p>Stay organized, Achieve your dreams</p>
             </div>
             <button

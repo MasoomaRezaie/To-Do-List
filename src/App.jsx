@@ -11,11 +11,11 @@ function AppContent() {
   return (
     <div className={`${isDarkMode ? "dark" : ""} min-h-screen h-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500
      dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950 text-slate-900 dark:text-slate-100 transition-colors duration-300`}>
-      <main className="px-10 py-5">
+      <main className="p-2 md:px-10 md:py-5">
         <Header/>
         <TaskProvider>
           <Progress />
-          <div className="flex gap-3">
+          <div className="flex flex-col gap-1.5 md:flex-row md:gap-3">
             <ProgressGraph/>
             <Tasks />
           </div>

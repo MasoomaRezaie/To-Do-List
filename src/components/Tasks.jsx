@@ -26,7 +26,7 @@ function Tasks() {
     }
 
     return (
-        <div className="w-full bg-white/40 dark:bg-purple-900/10 dark:border dark:border-purple-900/45 rounded-3xl p-3">
+        <div className="w-full bg-white/40 dark:bg-purple-900/10 dark:border dark:border-purple-900/45 rounded-xl md:rounded-3xl p-3">
             <div className="flex justify-between">
                 <h1 className="text-3xl font-semibold">Tasks</h1>
                 <button
