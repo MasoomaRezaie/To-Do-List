@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+let API_URL = "https://to-do-list-7ucn.onrender.com/";
 
 export const fetchApi = async (record, method, id, data) => {
     let url = `${API_URL}/${record}`;
