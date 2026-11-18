@@ -6,7 +6,7 @@ export function TaskProvider({ children }) {
     const [tasks, setTasks] = useState([]);
 
     useEffect(() => {
-    fetch("http://localhost:3000/tasks")
+    fetch("https://to-do-list-7ucn.onrender.com")
       .then(res => res.json())
       .then(data => setTasks(data))
       .catch(err => console.error(err));
